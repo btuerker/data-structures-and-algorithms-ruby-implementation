@@ -1,38 +1,75 @@
 require("./linked_list")
 
-linked_list1 = LinkedList.new
+list = LinkedList.new
 
 puts "linked_list initialization test-cases"
-puts "linked_list1 head: #{linked_list1.head}"
-puts "linked_list1 tail: #{linked_list1.tail}"
+puts "list head: #{list.head}"
+puts "list tail: #{list.tail}"
 
 puts
-puts "linked_list add(element) test-cases"
-linked_list1.add(5)
-puts "linked_list1 head.element: #{linked_list1.head.element}"
-puts "linked_list1 tail.element: #{linked_list1.tail.element}"
+puts "list add(element) test-cases"
+list.add(5)
+puts "list head.element: #{list.head.element}"
+puts "list tail.element: #{list.tail.element}"
 
-linked_list1.add(8)
-puts "linked_list1 head.element: #{linked_list1.head.element}"
-puts "linked_list1 tail.element: #{linked_list1.tail.element}"
+list.add(8)
+puts "list head.element: #{list.head.element}"
+puts "list tail.element: #{list.tail.element}"
 
-linked_list1.add(11)
-puts "linked_list1 head.element: #{linked_list1.head.element}"
-puts "linked_list1 tail.element: #{linked_list1.tail.element}"
+list.add(11)
+puts "list head.element: #{list.head.element}"
+puts "list tail.element: #{list.tail.element}"
 
 puts
-puts "linked_list get(index) test-cases"
-puts "linked_list1.get(0): #{linked_list1.get(0)}"
-puts "linked_list1.get(1): #{linked_list1.get(1)}"
-puts "linked_list1.get(2): #{linked_list1.get(2)}"
-puts "linked_list1.get(3): #{linked_list1.get(3)}"
+puts "list get(index) test-cases"
+puts "list.get(0): #{list.get(0)}"
+puts "list.get(1): #{list.get(1)}"
+puts "list.get(2): #{list.get(2)}"
+puts "list.get(3): #{list.get(3)}"
 
 puts
 puts "linked_list [] operator overloading test-cases"
-puts "linked_list1[0]: #{linked_list1[0]}"
-puts "linked_list1[1]: #{linked_list1[1]}"
-puts "linked_list1[2]: #{linked_list1[2]}"
-puts "linked_list1[3]: #{linked_list1[3]}"
+puts "linked_list1[0]: #{list[0]}"
+puts "linked_list1[1]: #{list[1]}"
+puts "linked_list1[2]: #{list[2]}"
+puts "linked_list1[3]: #{list[3]}"
+
+
+puts
+puts
+puts
+
+list = LinkedList.new
+
+print "inital list -> #{list.to_array}"
+puts
+list.add(5)
+print "list.add(5) -> #{list.to_array}"
+puts
+list.add(0,11)
+print "list.add(0,11) -> #{list.to_array}"
+puts
+list.add(1,12)
+print "list.add(1,12) -> #{list.to_array}"
+puts
+list.remove(0)
+print "list.remove(0) -> #{list.to_array}"
+puts
+list.remove(0)
+print "list.remove(0) -> #{list.to_array}"
+puts
+list.remove(0)
+print "list.remove(0) -> #{list.to_array}"
+puts
+list.remove(0)
+print "list.remove(0) -> #{list.to_array}"
+puts
+
+
+
+
+
+
 
 
 
